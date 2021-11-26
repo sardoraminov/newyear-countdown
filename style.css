@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(public/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.box {
+  margin: 10px;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(16.5px);
+  -webkit-backdrop-filter: blur(16.5px);
+  border-radius: 6px;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.171);
+}
+
+.box .title {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.box-elem {
+  text-align: center;
+}
+
+.box-elem h1 {
+  color: #fff;
+  font-size: 32px;
+}
+
+.box-elem p {
+  color: rgba(255, 255, 255, 0.555);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(56, 255, 156);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
+
+@media (max-width: 324px) {
+    footer {
+        font-size: 10px;
+    }
+
+    .box {
+        height: auto;
+        padding: 20px 25px;
+    }
+
+    .box .title {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+  .elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
